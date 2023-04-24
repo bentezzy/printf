@@ -40,7 +40,6 @@ int _printf(const char *format, ...)
 			width = get_width(format, &j, list);
 			precision = get_precision(format, &j, list);
 			size = get_size(format, &j);
-			++i;
 			printed = handle_print(format, &j, list, buffer,
 				flags, width, precision, size);
 			if (printed == -1)
