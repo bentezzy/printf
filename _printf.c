@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 			precision = _precision(format, &j, list);
 			size = _size(format, &j);
 			printed = handle_print(format, &j, list, buffer,
-				flags, width,precision, size);
+				flags, width, precision, size);
 			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
